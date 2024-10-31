@@ -1,0 +1,47 @@
+syntax = "proto3";
+
+option csharp_namespace = "GrpcService112";
+
+import "google/api/annotations.proto";
+import "google/protobuf/wrappers.proto";
+
+package greet;
+
+// The greeting service definition.
+service Greeter {
+  // Sends a greeting
+  rpc SayHello (HelloRequest) returns (HelloReply){
+	option (google.api.http) = {
+		post: "/v1/hello",
+		body: "*"
+	};
+  };
+
+  rpc Add(reqTicketCreate) returns (resTicketMessage) {
+	 option (google.api.http) = {
+		post: "/v1/add",
+		body: "*"
+	 };
+  };
+}
+
+message reqTicketCreate {
+  google.protobuf.StringValue name = 1;
+  google.protobuf.StringValue email = 2;
+  google.protobuf.StringValue phone = 3;
+  google.protobuf.StringValue address = 4;
+  google.protobuf.StringValue description = 5;
+}
+
+message resTicketMessage{
+	string message = 1;
+}
+// The request message containing the user's name.
+message HelloRequest {
+  string name = 1;
+}
+
+// The response message containing the greetings.
+message HelloReply {
+  string message = 1;
+}
