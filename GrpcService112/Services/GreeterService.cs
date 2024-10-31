@@ -1,6 +1,6 @@
 using Grpc.Core;
 using GrpcService112;
-using GrpcService112.UseCase;
+using GrpcService112.UseCase.@interface;
 
 namespace GrpcService112.Services
 {

@@ -2,6 +2,7 @@ using GrpcService112.Configuration;
 using GrpcService112.Configuration.Mysql;
 using GrpcService112.Services;
 using GrpcService112.UseCase;
+using GrpcService112.UseCase.@interface;
 using Microsoft.OpenApi.Models;
 
 namespace GrpcService112

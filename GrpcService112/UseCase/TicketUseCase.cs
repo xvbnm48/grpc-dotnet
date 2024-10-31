@@ -1,6 +1,7 @@
 ﻿using Grpc.Core;
 using GrpcService112.Configuration;
 using GrpcService112.Services;
+using GrpcService112.UseCase.@interface;
 using Newtonsoft.Json;
 
 namespace GrpcService112.UseCase

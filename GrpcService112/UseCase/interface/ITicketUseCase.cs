@@ -1,7 +1,6 @@
 ﻿using Grpc.Core;
-using GrpcService112;
 
-namespace GrpcService112.UseCase
+namespace GrpcService112.UseCase.@interface
 {
     public interface ITicketUseCase
     {
