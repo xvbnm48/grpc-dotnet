@@ -4,11 +4,11 @@ using GrpcService112.UseCase.@interface;
 
 namespace GrpcService112.Services
 {
-    public class GreeterService : Greeter.GreeterBase
+    public class EcommerceServices : ecommerce.ecommerceBase
     {
-        private readonly ILogger<GreeterService> _logger;
+        private readonly ILogger<EcommerceServices> _logger;
         private readonly ITicketUseCase _ticketUseCase;
-        public GreeterService(ILogger<GreeterService> logger, ITicketUseCase ticketUseCase)
+        public EcommerceServices(ILogger<EcommerceServices> logger, ITicketUseCase ticketUseCase)
         {
             _logger = logger;
             _ticketUseCase = ticketUseCase;

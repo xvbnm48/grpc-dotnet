@@ -5,10 +5,9 @@ option csharp_namespace = "GrpcService112";
 import "google/api/annotations.proto";
 import "google/protobuf/wrappers.proto";
 
-package greet;
+package ecommerce;
 
-// The greeting service definition.
-service Greeter {
+service ecommerce {
   // Sends a greeting
   rpc SayHello (HelloRequest) returns (HelloReply){
 	option (google.api.http) = {
